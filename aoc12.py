@@ -1,6 +1,5 @@
-from collections import deque, defaultdict
+from collections import deque
 import pprint
-import heapq
 
 
 PP = pprint.PrettyPrinter(indent=4)
@@ -90,7 +89,6 @@ def main2():
     matrix[e_r][e_c] = 'z'
 
     _min = float('inf')
-    queue = deque()
     for r in range(len(matrix)):
         for c in range(len(matrix[0])):
             if matrix[r][c] == 'a':
